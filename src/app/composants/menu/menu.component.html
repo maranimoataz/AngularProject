@@ -1,0 +1,7 @@
+<ul>
+    <li><a routerLink=''> Accueil </a></li>
+    <li><a routerLink='/stagiaire'> stagiaire </a></li>
+    <li><a [routerLink]="['/adresse']" [queryParams]="{ ville : 'marseille',
+    codepostal : '13000', rue :'paradis'}"> Adresse </a></li>
+    <li><a routerLink='/tableau/id'> tableau </a></li>
+</ul>
