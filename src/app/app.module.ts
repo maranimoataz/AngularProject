@@ -12,6 +12,7 @@ import { MenuComponent } from './composants/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { CalculComponent } from './calcul/calcul.component';
 import { TableauComponent } from './tableau/tableau.component';
+import { VehiculeModule } from './modules/vehicule/vehicule.module';
 
 @NgModule({
   declarations: [
@@ -31,9 +32,13 @@ import { TableauComponent } from './tableau/tableau.component';
       { path : 'stagiaire', component : StagiaireComponent },
       { path:'adresse',component : AdresseComponent },
     ]),
-    AppRoutingModule
+    AppRoutingModule,
+    VehiculeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() { console.log('app-module'); }
+
+}
