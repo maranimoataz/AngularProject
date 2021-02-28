@@ -1,7 +1,21 @@
-<ul>
-    <li><a routerLink=''> Accueil </a></li>
-    <li><a routerLink='/stagiaire'> stagiaire </a></li>
-    <li><a [routerLink]="['/adresse']" [queryParams]="{ ville : 'marseille',
-    codepostal : '13000', rue :'paradis'}"> Adresse </a></li>
-    <li><a routerLink='/tableau/id'> tableau </a></li>
-</ul>
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink='/acceuil' routerLinkActive=active [routerLinkActiveOptions]="{ exact: true }"> A propos de moi</a>
+        <li routerLinkActive=active>
+        <a class="nav-item nav-link" routerLink='/experience'>Experience</a>
+        </li>
+        <li routerLinkActive=active>
+        <a class="nav-item nav-link" routerLink='/competence'>Competence</a>
+        </li>
+        <li routerLinkActive=active>
+        <a class="nav-item nav-link" routerLink='/formation'>Formation</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+</div>

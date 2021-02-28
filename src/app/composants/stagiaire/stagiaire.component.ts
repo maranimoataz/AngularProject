@@ -10,10 +10,8 @@ export class StagiaireComponent implements OnInit {
   prenom : any;
 
   constructor(private route:ActivatedRoute) { }
-
   ngOnInit(): void {
     this.nom = this.route.snapshot.queryParams.nom;
     this.prenom = this.route.snapshot.queryParams.prenom;
   }
-
 }

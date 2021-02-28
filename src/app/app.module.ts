@@ -13,6 +13,10 @@ import { RouterModule } from '@angular/router';
 import { CalculComponent } from './calcul/calcul.component';
 import { TableauComponent } from './tableau/tableau.component';
 import { VehiculeModule } from './modules/vehicule/vehicule.module';
+import { CompetenceComponent } from './composants/competence/competence.component';
+import { ExperienceComponent } from './composants/experience/experience.component';
+import { FormationComponent } from './composants/formation/formation.component';
+import { AcceuilComponent } from './composants/acceuil/acceuil.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { VehiculeModule } from './modules/vehicule/vehicule.module';
     StagiaireComponent,
     MenuComponent,
     CalculComponent,
-    TableauComponent
+    TableauComponent,
+    CompetenceComponent,
+    ExperienceComponent,
+    FormationComponent,
+    AcceuilComponent
   ],
   imports: [
     BrowserModule,

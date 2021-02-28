@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-    lienStagiaire = '';
-    param1 = 'moataz';
-    param2 = 'marani';
-  constructor() {
-    this.lienStagiaire = '/stagiaire' + this.param1 + '/' + this.param2;
-   }
+  constructor() {}
   ngOnInit(): void {
 
   }
