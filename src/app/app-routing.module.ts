@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:'competence',component:CompetenceComponent},
   {path : 'experience', component:ExperienceComponent},
   {path: 'formation', component:FormationComponent},
-  {path : 'acceuil', component:AcceuilComponent},
+  {path : '', component:AcceuilComponent},
   {path: 'vehicule',
   loadChildren: () => import('./modules/vehicule/vehicule.module').
   then(m => m.VehiculeModule)
